@@ -29,8 +29,8 @@ FP    |   TP
   
   Based on the confusion matrix, we can calculate the following metrics:
   
--**Accuracy** This is defined as the sum of all correct predictions divided by the total number of predictions: (TP+TN)/(TP+TN+FP+FN). Accuracy works best with evenly distributed data points, but it works really badly for a skewed dataset
--**Precision** This is defined as TP/(TP+FP). This metric is concered with number of correct positive predictions.
--**Recall (aka. True Positive Rate (TPR))** This metric is defined to be TP/(TP+FN). This metric is concerned with the number of correctly predicted positive events. 
--**F1 score** This metric is defined to be 2*(precision x recall) /(precision + recall). This is known as the harmonic mean of precision and recall, and it is a good way to summarize the evaluation od the algorithm in a single number.
--**False Postive Rate (FPR)** This metric is defined as FP/(FP+TN). FPR corresponds to the proportion of negative data points that are mistakenly considered as positive, with repective to all negative data points. In other words, the higher FPR, the more negative data points you will misclassify.
+- **Accuracy** This is defined as the sum of all correct predictions divided by the total number of predictions: (TP+TN)/(TP+TN+FP+FN). Accuracy works best with evenly distributed data points, but it works really badly for a skewed dataset
+- **Precision** This is defined as TP/(TP+FP). This metric is concered with number of correct positive predictions.
+- **Recall (aka. True Positive Rate (TPR))** This metric is defined to be TP/(TP+FN). This metric is concerned with the number of correctly predicted positive events. 
+- **F1 score** This metric is defined to be 2*(precision x recall) /(precision + recall). This is known as the harmonic mean of precision and recall, and it is a good way to summarize the evaluation od the algorithm in a single number.
+- **False Postive Rate (FPR)** This metric is defined as FP/(FP+TN). FPR corresponds to the proportion of negative data points that are mistakenly considered as positive, with repective to all negative data points. In other words, the higher FPR, the more negative data points you will misclassify.
