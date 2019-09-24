@@ -34,3 +34,18 @@ FP    |   TP
 - **Recall (aka. True Positive Rate (TPR))** This metric is defined to be TP/(TP+FN). This metric is concerned with the number of correctly predicted positive events. 
 - **F1 score** This metric is defined to be 2*(precision x recall) /(precision + recall). This is known as the harmonic mean of precision and recall, and it is a good way to summarize the evaluation od the algorithm in a single number.
 - **False Postive Rate (FPR)** This metric is defined as FP/(FP+TN). FPR corresponds to the proportion of negative data points that are mistakenly considered as positive, with repective to all negative data points. In other words, the higher FPR, the more negative data points you will misclassify.
+
+## Chapter 8 Supervised Learning-Classification Using Support Vector Machines
+**Support Vector Machines (SVM)** is a classification algorithm, the main idea of which is to draw a line between two or more classes in the best possible manner. Once the line is drawn to separate the classses, we can then use it to predict future data.
+
+**Kernel trick** is a technique in machine learning that transforms data into a higher dimension space so that, after transformation, it has a clear dividing margin between classes of data.
+
+**Kernels** are functions that transform the data from nonlinear spaces to linear ones.
+
+**Penealty parameter of the error term (C)** controls the tradeoff between the smooth decision boundary and classifying the training points correctly. If the value of C is high, then SVM algorithm will seek to ensure that all points are classifed correctly. The downside to this is that it may result in a narrower margin. In short, a low C makes the decision surface smooth while trying to classfy most points, while a high C tries to classify all of the points correctly.
+
+**Gamma** defines how far the influence of a single training example reaches. A low gamma indicates that every points has a far reach while a high gamma means that the points closet to the decision boundary have a close reach. Thge higher the gamma value, the more it will try to fit the training dataset exactly, resulting in overfitting.
+
+Some commonly used **nonlinear kernels** includes:
+- Radial Basis function (RBF), aka *Gaussian Kernal*
+- Polynomial kernel, a polynomial kernel of degree 1 is similar to that of the linear kernel. Higher-degree polynomial kernels afford a more flexible decision boundary.
