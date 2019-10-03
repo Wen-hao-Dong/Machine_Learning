@@ -49,3 +49,6 @@ FP    |   TP
 Some commonly used **nonlinear kernels** includes:
 - Radial Basis function (RBF), aka *Gaussian Kernal*
 - Polynomial kernel, a polynomial kernel of degree 1 is similar to that of the linear kernel. Higher-degree polynomial kernels afford a more flexible decision boundary.
+
+## Chapter 9 Supervised Learning-Classification Using K-Nearest Neighbors (KNN)
+**K-Nearest Neighbors (KNN)** is a relativelt simple algorithm. It works by comparing the query instance's distance to the other training samples and selecting the K-nearest neighbors. It then takes the majority of these K-neighbor classes to be the prediction of the query instance.
