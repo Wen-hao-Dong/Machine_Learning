@@ -52,3 +52,10 @@ Some commonly used **nonlinear kernels** includes:
 
 ## Chapter 9 Supervised Learning-Classification Using K-Nearest Neighbors (KNN)
 **K-Nearest Neighbors (KNN)** is a relativelt simple algorithm. It works by comparing the query instance's distance to the other training samples and selecting the K-nearest neighbors. It then takes the majority of these K-neighbor classes to be the prediction of the query instance.
+
+The number of the K will lead to *overfitting, underfitting, or generally good fit*. Overfitting, the model tries hard to fit all of the data perfectly, the problem with an overfitted model is that it will not work well with new, unseen data. Underfitting, on the other hand, occurs wehn a machine learning model cannot accurately capture the underlying trend of the data. Specifically, the model does not fir the data well enough. For KNN, ususally, setting K to a higher value tends to make your prediction more robust against noise in your data. As K increases, the boundary becomes smoother. But meanwhile, more points will be classified incorrectly. When K increases to a large value, underfitting occurs. **The key issue with KNN is then how to find out the ideal value of K to use?** We can use Cross-Validation and Parameter-Tuning K to see how they perform with the given dataset.
+
+For KNN, there are three rules:
+- The value of K cannot exceed the numbers of rows for training
+- The value of K should be an odd number (avoid situations where there is a tie between the classes) for a two-class problem
+- The value of K must not be a multiple of the number of classes (avoid ties)
